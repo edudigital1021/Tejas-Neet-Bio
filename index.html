@@ -91,18 +91,146 @@
         const ALL_QUESTIONS = [
             { id: 1, question: "Which of the following is responsible for peat formation?", options: ["Marchantia", "Riccia", "Funaria", "Sphagnum"], correctAnswer: 3, year: 2014, chapter: "Plant Kingdom", classLevel: "11", topic: "Bryophytes", solution: "Sphagnum (Peat moss) is used as fuel and packing material." },
             { id: 2, question: "Select the wrong statement regarding Diatoms.", options: ["Walls are easily destructible", "Form diatomaceous earth", "Chief producers in oceans", "Float passively in water"], correctAnswer: 0, year: 2016, chapter: "Biological Classification", classLevel: "11", topic: "Chrysophytes", solution: "Diatom walls are indestructible due to silica deposition." },
-            { id: 3, question: "The term 'Nuclein' for the genetic material was used by:", options: ["Mendel", "Friedrich Miescher", "Watson and Crick", "Franklin"], correctAnswer: 1, year: 2021, chapter: "Molecular Basis of Inheritance", classLevel: "12", topic: "DNA", solution: "Friedrich Miescher isolated nuclein from pus cells in 1869." },
-            ...Array.from({ length: 30 }, (_, i) => ({
-                id: 100 + i,
-                question: `NEET Bio Question ${i + 4}: NCERT based conceptual question for practice?`,
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: Math.floor(Math.random() * 4),
-                year: 2010 + Math.floor(Math.random() * 16),
-                chapter: ALL_CHAPTER_LIST[Math.floor(Math.random() * (ALL_CHAPTER_LIST.length - 1)) + 1],
-                classLevel: Math.random() > 0.5 ? "11" : "12",
-                topic: "Conceptual Mastery",
-                solution: "Based on standard NCERT Biology syllabus text."
-            }))
+            { id: 3, question: "In the above represented plasmid an alien piece of DNA is inserted at EcoRI site. Which strategy selects recombinant colonies?", options: ["White color colonies", "Blue colonies on ampicillin", "Ampicillin & tetracycline plate", "Blue colonies"], correctAnswer: 0, year: 2025, chapter: "Biotechnology", classLevel: "12", topic: "Recombinant DNA", solution: "Insertional inactivation leads to white colonies." },
+
+{ id: 4, question: "The protein portion of an enzyme is called:", options: ["Apoenzyme", "Prosthetic group", "Cofactor", "Coenzyme"], correctAnswer: 0, year: 2025, chapter: "Biomolecules", classLevel: "11", topic: "Enzymes", solution: "Protein part is called apoenzyme." },
+
+{ id: 5, question: "Primary source of energy in ecosystem & NPP definition correct option?", options: ["I true II false", "I false II true", "Both true", "Both false"], correctAnswer: 0, year: 2025, chapter: "Ecosystem", classLevel: "12", topic: "Productivity", solution: "NPP ≠ total photosynthesis." },
+
+{ id: 6, question: "Typical angiosperm embryo sac is:", options: ["A true R false", "A false R true", "Both true correct explanation", "Both true wrong explanation"], correctAnswer: 0, year: 2025, chapter: "Sexual Reproduction in Flowering Plants", classLevel: "12", topic: "Embryo sac", solution: "Egg apparatus has 3 cells not polar nuclei." },
+
+{ id: 7, question: "Neoplastic characteristics include:", options: ["A,B,D", "B,C,D", "A,B", "A,B,C"], correctAnswer: 3, year: 2025, chapter: "Human Health and Disease", classLevel: "12", topic: "Cancer", solution: "Rapid growth & invasion present." },
+
+{ id: 8, question: "Characteristic feature of gymnosperms:", options: ["Seeds absent", "Flowers present", "Seeds enclosed", "Naked seeds"], correctAnswer: 3, year: 2025, chapter: "Plant Kingdom", classLevel: "11", topic: "Gymnosperm", solution: "Seeds are naked." },
+
+{ id: 9, question: "Hormone match correct:", options: ["a", "b", "c", "d"], correctAnswer: 2, year: 2025, chapter: "Chemical Coordination", classLevel: "11", topic: "Hormones", solution: "Progesterone corpus luteum etc." },
+
+{ id: 10, question: "Chromosome with highest genes:", options: ["Chromosome1", "Chromosome10", "ChromosomeX", "ChromosomeY"], correctAnswer: 0, year: 2025, chapter: "Molecular Basis of Inheritance", classLevel: "12", topic: "Genome", solution: "Chr1 highest genes." },
+
+{ id: 11, question: "RuBisCO true statement:", options: ["Photolysis", "Carboxylation RuBP", "Dark only", "Higher O2 affinity"], correctAnswer: 1, year: 2025, chapter: "Photosynthesis", classLevel: "11", topic: "Calvin Cycle", solution: "Carboxylates RuBP." },
+
+{ id: 12, question: "First menstruation called:", options: ["Diapause", "Ovulation", "Menopause", "Menarche"], correctAnswer: 3, year: 2025, chapter: "Reproductive Health", classLevel: "12", topic: "Puberty", solution: "Menarche." },
+
+{ id: 13, question: "Organism used by Eli Lilly to produce insulin:", options: ["Virus", "Phage", "Bacteria", "Yeast"], correctAnswer: 2, year: 2025, chapter: "Biotechnology", classLevel: "12", topic: "Insulin", solution: "E.coli used." },
+
+{ id: 14, question: "All vertebrates chordates statement:", options: ["A true R false", "A false R true", "Both true correct", "Both true wrong"], correctAnswer: 2, year: 2025, chapter: "Animal Kingdom", classLevel: "11", topic: "Chordates", solution: "Correct explanation." },
+
+{ id: 15, question: "Function of spindle fiber:", options: ["Repair DNA", "Regulate growth", "Separate chromosomes", "Synthesize DNA"], correctAnswer: 2, year: 2025, chapter: "Cell Cycle", classLevel: "11", topic: "Mitosis", solution: "Chromatid separation." },
+
+{ id: 16, question: "Hershey Chase match:", options: ["a", "b", "c", "d"], correctAnswer: 0, year: 2025, chapter: "Molecular Basis", classLevel: "12", topic: "DNA proof", solution: "DNA genetic material." },
+
+{ id: 17, question: "Adenosine Adenine match:", options: ["a", "b", "c", "d"], correctAnswer: 0, year: 2025, chapter: "Biomolecules", classLevel: "11", topic: "Nucleotides", solution: "Correct biochemical match." },
+
+{ id: 18, question: "Frog renal portal system links:", options: ["Kidney intestine", "Kidney lower body", "Liver intestine", "Liver kidney"], correctAnswer: 1, year: 2025, chapter: "Structural Organisation Animals", classLevel: "11", topic: "Frog", solution: "Lower body connection." },
+
+{ id: 19, question: "Post transcriptional events:", options: ["BCE", "CDE", "ABC", "BCD"], correctAnswer: 3, year: 2025, chapter: "Molecular Basis", classLevel: "12", topic: "RNA processing", solution: "Splicing capping tailing." },
+
+{ id: 20, question: "PCR amplification equation:", options: ["2n+1", "2N2", "N2", "2n"], correctAnswer: 3, year: 2025, chapter: "Biotech Tools", classLevel: "12", topic: "PCR", solution: "2^n copies." },
+
+{ id: 21, question: "Wind & water pollinated flowers statement correct?", options: ["A true R false", "A false R true", "Both true correct", "Both true wrong"], correctAnswer: 3, year: 2025, chapter: "Sexual Reproduction in Plants", classLevel: "12", topic: "Pollination", solution: "Reason true but not explanation." },
+
+{ id: 22, question: "Epiphytes on mango branch example:", options: ["Predation", "Amensalism", "Commensalism", "Mutualism"], correctAnswer: 2, year: 2025, chapter: "Organisms and Populations", classLevel: "12", topic: "Ecological interactions", solution: "One benefited other unaffected." },
+
+{ id: 23, question: "Human pregnancy correct statements:", options: ["BCDE", "ACDE", "AE", "BC"], correctAnswer: 1, year: 2025, chapter: "Human Reproduction", classLevel: "12", topic: "Pregnancy", solution: "Organs by 12 weeks." },
+
+{ id: 24, question: "Foam breaker in bioreactor:", options: ["D", "C", "A", "B"], correctAnswer: 1, year: 2025, chapter: "Biotech Principles", classLevel: "12", topic: "Bioreactor", solution: "Part C foam breaker." },
+
+{ id: 25, question: "Frog respiration statement:", options: ["False water true land", "False both", "True water false land", "True both"], correctAnswer: 0, year: 2025, chapter: "Structural Organisation Animals", classLevel: "11", topic: "Frog physiology", solution: "Buccal cavity not in water." },
+
+{ id: 26, question: "Adrenal medulla functions:", options: ["ACD", "D", "CD", "BCD"], correctAnswer: 3, year: 2025, chapter: "Chemical Coordination", classLevel: "11", topic: "Adrenal gland", solution: "Hyperglycemic & piloerection." },
+
+{ id: 27, question: "Plant growth development correct:", options: ["ADE", "BDE", "ABC", "ACE"], correctAnswer: 2, year: 2025, chapter: "Plant Growth", classLevel: "11", topic: "PGR", solution: "ABA inhibitor." },
+
+{ id: 28, question: "Hormone synthesized in hypothalamus but released by pituitary:", options: ["FSH", "ACTH", "LH", "ADH"], correctAnswer: 3, year: 2025, chapter: "Neural Control", classLevel: "11", topic: "Hormones", solution: "ADH hypothalamus origin." },
+
+{ id: 29, question: "Non distilled alcoholic beverage:", options: ["Beer", "Rum", "Whisky", "Brandy"], correctAnswer: 0, year: 2025, chapter: "Microbes in Human Welfare", classLevel: "12", topic: "Fermentation", solution: "Beer not distilled." },
+
+{ id: 30, question: "Polygenic trait inheritance:", options: ["Autosomal dominant", "X-linked recessive", "Mendelian", "Non mendelian"], correctAnswer: 3, year: 2025, chapter: "Principles of Inheritance", classLevel: "12", topic: "Polygenic", solution: "Multiple genes." },
+
+{ id: 31, question: "Sperm structure match:", options: ["a", "b", "c", "d"], correctAnswer: 2, year: 2025, chapter: "Human Reproduction", classLevel: "12", topic: "Gamete", solution: "Head DNA tail motility." },
+
+{ id: 32, question: "Zygomorphic flower example:", options: ["Pea", "Chilli", "Petunia", "Datura"], correctAnswer: 0, year: 2025, chapter: "Morphology of Flowering Plants", classLevel: "11", topic: "Flower symmetry", solution: "Pea zygomorphic." },
+
+{ id: 33, question: "Organism cannot fix nitrogen:", options: ["B only", "E only", "A only", "D only"], correctAnswer: 3, year: 2025, chapter: "Microbes", classLevel: "12", topic: "Nitrogen fixation", solution: "Volvox not fixer." },
+
+{ id: 34, question: "Ex situ conservation example:", options: ["Zoo Botanical garden", "Protected area", "National park", "Wildlife sanctuary"], correctAnswer: 0, year: 2025, chapter: "Biodiversity", classLevel: "12", topic: "Conservation", solution: "Offsite conservation." },
+
+{ id: 35, question: "Father of ecology in India:", options: ["Ram Udar", "Birbal Sahni", "S.R Kashyap", "Ramdeo Misra"], correctAnswer: 3, year: 2025, chapter: "Ecology", classLevel: "12", topic: "Scientists", solution: "Ramdeo Misra." },
+
+{ id: 36, question: "RNA world & DNA evolution:", options: ["I true II false", "I false II true", "Both true", "Both false"], correctAnswer: 2, year: 2025, chapter: "Evolution", classLevel: "12", topic: "Origin of life", solution: "Both correct." },
+
+{ id: 37, question: "tRNA rRNA interaction statement:", options: ["I true II false", "I false II true", "Both true", "Both false"], correctAnswer: 1, year: 2025, chapter: "Molecular Basis", classLevel: "12", topic: "RNAi", solution: "Statement I wrong." },
+
+{ id: 38, question: "Organ hormone match:", options: ["a", "b", "c", "d"], correctAnswer: 1, year: 2025, chapter: "Chemical Coordination", classLevel: "11", topic: "Hormone sources", solution: "ANF heart." },
+
+{ id: 39, question: "Cyclostomata members:", options: ["Symbiotic", "Ectoparasite", "Free living", "Endoparasite"], correctAnswer: 1, year: 2025, chapter: "Animal Kingdom", classLevel: "11", topic: "Cyclostomata", solution: "All ectoparasites." },
+
+{ id: 40, question: "Streptokinase use:", options: ["Liver treatment", "Remove clots", "Curd", "Ethanol"], correctAnswer: 1, year: 2025, chapter: "Biotech Applications", classLevel: "12", topic: "Enzymes medicine", solution: "Clot buster." },
+
+{ id: 41, question: "Water vascular system roles:", options: ["BC", "BDE", "AB", "AC"], correctAnswer: 3, year: 2025, chapter: "Animal Kingdom", classLevel: "11", topic: "Echinoderms", solution: "Respiration locomotion food." },
+
+{ id: 42, question: "Plant group match:", options: ["a", "b", "c", "d"], correctAnswer: 3, year: 2025, chapter: "Plant Kingdom", classLevel: "11", topic: "Classification", solution: "Correct taxa." },
+
+{ id: 43, question: "Cancer statements correct:", options: ["CD", "AC", "BD", "DE"], correctAnswer: 1, year: 2025, chapter: "Human Health", classLevel: "12", topic: "Cancer therapy", solution: "CT MRI detect." },
+
+{ id: 44, question: "IVF drawbacks:", options: ["ABCD", "ABCEF", "BDF", "ACDF"], correctAnswer: 2, year: 2025, chapter: "Reproductive Health", classLevel: "12", topic: "IVF", solution: "Expensive & embryo risk." },
+
+{ id: 45, question: "Gametogenesis statements:", options: ["BD", "BC", "AB", "AC"], correctAnswer: 2, year: 2025, chapter: "Human Reproduction", classLevel: "12", topic: "Gametogenesis", solution: "Females earlier meiosis." },
+
+{ id: 46, question: "Gemmae function:", options: ["Nutrition", "Gas exchange", "Sexual reproduction", "Asexual reproduction"], correctAnswer: 3, year: 2025, chapter: "Plant Kingdom", classLevel: "11", topic: "Bryophyte", solution: "Asexual buds." },
+
+{ id: 47, question: "Golgi apparatus assertion reason:", options: ["A true R false", "A false R true", "Both true correct", "Both true wrong"], correctAnswer: 2, year: 2025, chapter: "Cell Biology", classLevel: "11", topic: "Golgi", solution: "Packaging & vesicles." },
+
+{ id: 48, question: "Reductionist biology:", options: ["Chemical", "Behavioural", "Physicochemical", "Physiological"], correctAnswer: 2, year: 2025, chapter: "Biology and Human Welfare", classLevel: "11", topic: "Approaches", solution: "Physicochemical." },
+
+{ id: 49, question: "Secondary lymphoid organs:", options: ["EAB", "CDE", "BCD", "ABC"], correctAnswer: 1, year: 2025, chapter: "Human Health", classLevel: "12", topic: "Immune system", solution: "Spleen nodes Peyer." },
+
+{ id: 50, question: "Biodiversity match:", options: ["a", "b", "c", "d"], correctAnswer: 3, year: 2025, chapter: "Biodiversity", classLevel: "12", topic: "Conservation terms", solution: "Correct match." },
+
+{ id: 51, question: "Female gametophyte divisions:", options: ["1 meiosis 3 mitosis", "0 meiosis 2 mitosis", "2 meiosis 3 mitosis", "1 meiosis 2 mitosis"], correctAnswer: 0, year: 2025, chapter: "Sexual Reproduction Plants", classLevel: "12", topic: "Embryo sac", solution: "MMC meiosis then 3 mitosis." },
+
+{ id: 52, question: "Innate immunity:", options: ["Cell mediated", "Humoral", "Acquired", "Innate"], correctAnswer: 3, year: 2025, chapter: "Human Health", classLevel: "12", topic: "Immunity", solution: "Present at birth." },
+
+{ id: 53, question: "Fig fruit statements:", options: ["I true II false", "I false II true", "Both true", "Both false"], correctAnswer: 3, year: 2025, chapter: "Ecology", classLevel: "12", topic: "Mutualism", solution: "Both incorrect." },
+
+{ id: 54, question: "Tapetum assertion reason:", options: ["A true R false", "A false R true", "Both true correct", "Both true wrong"], correctAnswer: 2, year: 2025, chapter: "Sexual Reproduction Plants", classLevel: "12", topic: "Anther", solution: "Multinucleate nourishment." },
+
+{ id: 55, question: "Ribosome correct statements:", options: ["ABE", "BDE", "ABC", "ABD"], correctAnswer: 2, year: 2025, chapter: "Cell Biology", classLevel: "11", topic: "Ribosome", solution: "80S 60+40." },
+
+{ id: 56, question: "Haem enzyme:", options: ["Succinate dehydrogenase", "Catalase", "RuBisCo", "Carbonic anhydrase"], correctAnswer: 1, year: 2025, chapter: "Respiration", classLevel: "11", topic: "Enzyme", solution: "Catalase haem." },
+
+{ id: 57, question: "Deoxygenated blood vessel frog:", options: ["Pulmonary vein", "Vena cava", "Aorta", "Pulmonary artery"], correctAnswer: 1, year: 2025, chapter: "Structural Organisation Animals", classLevel: "11", topic: "Frog circulation", solution: "Vena cava." },
+
+{ id: 58, question: "Pteridophyte life cycle sequence:", options: ["DECA B", "EDCBA", "BADEC", "BAECD"], correctAnswer: 2, year: 2025, chapter: "Plant Kingdom", classLevel: "11", topic: "Pteridophyte", solution: "Meiosis → prothallus." },
+
+{ id: 59, question: "Blue white screening statements:", options: ["I true II false", "I false II true", "Both true", "Both false"], correctAnswer: 1, year: 2025, chapter: "Biotech Tools", classLevel: "12", topic: "Cloning", solution: "White recombinant." },
+
+{ id: 60, question: "Microbes not household products:", options: ["CD", "CE", "AB", "AC"], correctAnswer: 3, year: 2025, chapter: "Microbes", classLevel: "12", topic: "Industrial microbes", solution: "Aspergillus & Trichoderma." },
+
+{ id: 61, question: "RNAi silencing via:", options: ["tRNA", "Non comp ssRNA", "Comp dsRNA", "Inhibitory ssRNA"], correctAnswer: 2, year: 2025, chapter: "Biotech Applications", classLevel: "12", topic: "RNAi", solution: "dsRNA required." },
+
+{ id: 62, question: "Complex II ETC:", options: ["Cytochrome c oxidase", "NADH dehydrogenase", "Cytochrome bc1", "Succinate dehydrogenase"], correctAnswer: 3, year: 2025, chapter: "Respiration", classLevel: "11", topic: "ETC", solution: "Complex II." },
+
+{ id: 63, question: "Body cavity pseudocoelom:", options: ["Schizocoelomate", "Spongocoelomate", "Acoelomate", "Pseudocoelomate"], correctAnswer: 3, year: 2025, chapter: "Animal Kingdom", classLevel: "11", topic: "Coelom", solution: "Mesoderm only body wall." },
+
+{ id: 64, question: "Floral formula statement:", options: ["I true II false", "I false II true", "Both true", "Both false"], correctAnswer: 1, year: 2025, chapter: "Morphology", classLevel: "11", topic: "Floral formula", solution: "Actinomorphic symbol." },
+
+{ id: 65, question: "Energy flow ecosystem:", options: ["I true II false", "I false II true", "Both true", "Both false"], correctAnswer: 0, year: 2025, chapter: "Ecosystem", classLevel: "12", topic: "Energy flow", solution: "2nd law applies." },
+
+{ id: 66, question: "Unit of productivity:", options: ["Kcal m-3", "(Kcal m-2)yr-1", "gm-2", "Kcal m-2"], correctAnswer: 1, year: 2025, chapter: "Ecosystem", classLevel: "12", topic: "Productivity", solution: "Per area per year." },
+
+{ id: 67, question: "Aleurone layer:", options: ["Integument", "Aleurone layer", "Coleoptile", "Coleorhiza"], correctAnswer: 1, year: 2025, chapter: "Anatomy Plants", classLevel: "11", topic: "Seed", solution: "Protein rich layer." },
+
+{ id: 68, question: "Pigment match:", options: ["a", "b", "c", "d"], correctAnswer: 3, year: 2025, chapter: "Photosynthesis", classLevel: "11", topic: "Pigments", solution: "Chl a blue green." },
+
+{ id: 69, question: "Triplet code proposed by:", options: ["Jacque Monod", "Franklin Stahl", "George Gamow", "Francis Crick"], correctAnswer: 2, year: 2025, chapter: "Molecular Basis", classLevel: "12", topic: "Genetic code", solution: "Gamow hypothesis." },
+
+{ id: 70, question: "Histones enriched with:", options: ["Phe Leu", "Phe Arg", "Lys Arg", "Leu Lys"], correctAnswer: 2, year: 2025, chapter: "Molecular Basis", classLevel: "12", topic: "Chromatin", solution: "Basic amino acids." },
+
+{ id: 71, question: "Gene cloning non essential:", options: ["DE", "BC", "CD", "AB"], correctAnswer: 2, year: 2025, chapter: "Biotech Tools", classLevel: "12", topic: "Cloning enzymes", solution: "Mutase recombinase not essential." },
+
+{ id: 72, question: "Mesosome function structure:", options: ["Cristae", "ER", "Mesosome", "Chromatophore"], correctAnswer: 2, year: 2025, chapter: "Cell Biology", classLevel: "11", topic: "Prokaryotic cell", solution: "Membranous infolding." }
+            ))
         ];
 
         const Icon = ({ name, size = 24, className = "" }) => {
