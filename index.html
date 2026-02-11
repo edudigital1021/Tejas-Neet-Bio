@@ -247,8 +247,12 @@
             );
 
             const PracticeView = () => {
-                const q = session.questions[session.currentIndex];
-                const ua = session.userAnswers[q?.id];
+    const [zoomed, setZoomed] = useState(false);
+    const q = session.questions[session.currentIndex];
+    const ua = session.userAnswers[q?.id];
+    useEffect(() => {
+  setZoomed(false);
+}, [session.currentIndex]);
                 if (!q) return null;
                 const progress = ((session.currentIndex + 1) / session.questions.length) * 100;
                 return (
@@ -263,11 +267,16 @@
                             <div className="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 shadow-sm border dark:border-slate-800 mb-6 question-card">
                                 <span className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 text-[10px] font-black rounded-full mb-4 inline-block uppercase">NEET {q.year}</span>
                                 <h2 className="text-xl font-bold dark:text-white leading-relaxed mb-8">{q.question}</h2>
-                                {q.image && (
-  <img
-    src={q.image}
-    className="w-full rounded-2xl mb-6 border dark:border-slate-700"
-  />
+                               {q.image && (
+  <div className="overflow-hidden rounded-2xl mb-6">
+    <img
+      src={q.image}
+      onDoubleClick={() => setZoomed(!zoomed)}
+      className={`w-full border dark:border-slate-700 transition-transform duration-300 ${
+        zoomed ? "scale-150 cursor-zoom-out" : "scale-100 cursor-zoom-in"
+      }`}
+    />
+  </div>
 )}
                                 <div className="space-y-3">
                                     {q.options.map((opt, i) => {
